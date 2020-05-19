@@ -20,41 +20,6 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var children2 = <Widget>[
-          Container(
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text("This is my Todo App",style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.red,
-                    fontStyle: FontStyle.italic,
-                    fontWeight: FontWeight.w800
-                  ),),
-                  Text("Second "),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.teal,
-                        borderRadius: BorderRadius.circular(20),
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 3,
-                        
-                        )
-                        
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
-        ];
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -62,7 +27,7 @@ class Home extends StatelessWidget {
         title: Text("ToDo APP"),
       ),
       body: Column(
-        children: children2,
+    
       ),
     );
   }
